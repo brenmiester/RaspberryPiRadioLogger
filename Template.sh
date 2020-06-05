@@ -5,7 +5,7 @@ timecode=$(TZ="###TIMEZONE OF BROADCAST###" date +%Y%m%d_%H:%M)
 date=$(date +%Y_%m_%d)
 
 #Output directory
-output_dir=###OUTPUT DIR###
+output_dir=###OUTPUT DIR###%date
 
 if [ ! -d $output_dir ]; then
 mkdir $output_dir
